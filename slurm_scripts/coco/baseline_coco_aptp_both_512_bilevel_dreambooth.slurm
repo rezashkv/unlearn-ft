@@ -38,7 +38,7 @@ export NCCL_DEBUG=INFO
 #export NCCL_IB_DISABLE=1
 
 source ~/.bashrc
-conda activate style_moe
+conda activate unlearn-ft
 cd path/to/diffusion_pruning/scripts/aptp || exit
 
 CMD=" \

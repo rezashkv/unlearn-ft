@@ -14,7 +14,7 @@
 set -x -e
 
 source ~/.bashrc
-conda activate style_moe
+conda activate unlearn-ft
 cd path/to/diffusion_pruning/scripts/metrics || exit
 
 #checkpoints=(2000 4000 6000 8000 10000)

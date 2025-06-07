@@ -11,7 +11,7 @@
 
 
 source ~/.bashrc
-conda activate style_moe
+conda activate unlearn-ft
 cd path/to/diffusion_pruning/scripts/metrics || exit
 
 fid_images_dir=$1
