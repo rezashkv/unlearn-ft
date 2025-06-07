@@ -21,7 +21,10 @@ paper ["Efficient Fine-Tuning and Concept Suppression for Pruned Diffusion Model
 </p>
 <p align="left">
 <em>
-Why can a two-stage approach (fine-tuning followed by forgetting) be suboptimal? If fine-tuning yields $\hat{\theta}$, initializing the concept unlearning parameters with $\hat{\theta}$ and optimizing the concept unlearning loss results in $\theta^{'}$, which is suboptimal for both fine-tuning and for concept unlearning. In contrast, our bilevel method produces the optimal solution $\theta^{*}$, achieving better performance for both fine-tuning and unlearning.
+Why can a two-stage approach (fine-tuning followed by forgetting) be suboptimal? If fine-tuning yields \(\hat{\theta}\), initializing 
+the concept unlearning parameters with \(\hat{\theta}\) and optimizing the concept unlearning loss results in \(\theta'\), which is 
+suboptimal for both fine-tuning and for concept unlearning. In contrast, our bilevel method produces the optimal solution \(\theta^*\), 
+achieving better performance for both fine-tuning and unlearning.
 </em>
 </p>
 
