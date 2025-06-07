@@ -105,6 +105,26 @@ coco
 
 ## Training
 
+### 1. Effect of Pruning
+To reproduce the experiments on the effect of pruning, you can use the following slurm scripts:
+- `slurm_scripts/coco/baseline_coco_aptp_ddpm_512.slurm`
+- `slurm_scripts/coco/baseline_coco_aptp_ddpm_512_random.slurm`
+
+
+### 2. Effect of Distillation
+To reproduce the experiments on the effect of distillation, you can use the following slurm scripts:
+- `slurm_scripts/coco/baseline_coco_aptp_ddpm_512.slurm`
+- `slurm_scripts/coco/baseline_coco_aptp_distillation_512.slurm`
+- `slurm_scripts/coco/baseline_coco_aptp_both_512.slurm`
+
+
+### 3. Bilevel Finetuning
+To reproduce the bilevel finetuning experiments, you can use the following slurm scripts:
+- `slurm_scripts/coco/baseline_coco_aptp_both_512_bilevel.slurm`
+- `slurm_scripts/coco/baseline_coco_aptp_both_512_bilevel_nudity.slurm`
+
+
+Config files for all pruning ratios can be found in  [the configs directory](configs).
 
 ## Evaluation
 To evaluate Unlearn-FT, we report the FID, CLIP Score.
