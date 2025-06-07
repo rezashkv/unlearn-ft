@@ -1,6 +1,6 @@
 # Efficient Fine-Tuning and Concept Suppression for Pruned Diffusion Models
 
-[![arXiv](https://img.shields.io/badge/arXiv-2406.12042-red.svg)](https://arxiv.org/abs/2412.15341) 
+[![arXiv](https://img.shields.io/badge/arXiv-2412.15341-red.svg)](https://arxiv.org/abs/2412.15341) 
 
 
 The implementation of the
