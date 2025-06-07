@@ -126,6 +126,13 @@ To reproduce the bilevel finetuning experiments, you can use the following slurm
 
 Config files for all pruning ratios can be found in  [the configs directory](configs).
 
+## Image Generation
+
+To generate images from the finetuned models, use the slurm scripts:
+- `slurm_scripts/evaluation/gen_images.slurm`
+- `slurm_scripts/evaluation/gen_images_erasue_baselines.slurm`
+
+
 ## Evaluation
 To evaluate Unlearn-FT, we report the FID, CLIP Score.
 
