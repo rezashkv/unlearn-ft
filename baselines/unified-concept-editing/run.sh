@@ -11,7 +11,7 @@
 #SBATCH --mem=128G
 
 source ~/.bashrc
-conda activate style_moe
+conda activate unlearn-ft
 
 cd /path/to/unified-concept-editing/train-scripts || exit
 

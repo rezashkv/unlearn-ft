@@ -13,7 +13,7 @@
 
 
 source ~/.bashrc
-conda activate style_moe
+conda activate unlearn-ft
 
 cd path/to//projects/concept_prune || exit
 
