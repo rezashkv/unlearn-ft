@@ -126,6 +126,10 @@ To reproduce the bilevel finetuning experiments, you can use the following slurm
 
 Config files for all pruning ratios can be found in  [the configs directory](configs).
 
+### 4. Baselines
+
+The code for reproducing the baseline results is provided in the [baselines folder](baselines). See the run.sh file in each baseline folder.
+
 ## Image Generation
 
 To generate images from the finetuned models, use the slurm scripts:
