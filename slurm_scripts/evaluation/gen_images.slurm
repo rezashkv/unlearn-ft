@@ -45,7 +45,7 @@ finetuning_ckpt_dir=$1
 
 echo "START TIME: $(date)"
 CMD=" \
-  generate_fid_images_txt.py \
+  generate_fid_images.py \
   --base_config_path \
   path/to/unlearn-ft/configs/img/sd-2-1_coco.yaml \
   --cache_dir \
