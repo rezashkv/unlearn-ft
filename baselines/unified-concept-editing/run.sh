@@ -23,6 +23,6 @@ python train_erase.py \
 --concepts \
 "Picasso" \
 --base_config_path \
-/path/to/configs/styles/img/sd-2-1_coco.yaml \
+/path/to/configs/img/sd-2-1_coco.yaml \
 --ckpt_path \
 /path/to/sd-2-1_coco_aptp_both_512/aptp_coco_82_both_sd/checkpoint-20000/
