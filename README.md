@@ -110,6 +110,7 @@ There are pruning checkpoints (55 and 82) corresponding to the paper experiments
 - `slurm_scripts/coco/baseline_coco_aptp_ddpm_512.slurm`
 - `slurm_scripts/coco/baseline_coco_aptp_ddpm_512_random.slurm`
 
+In this scripts, set `expert ID = 2` for the [55% checkpoint](https://huggingface.co/rezashkv/diffusion_pruning/tree/main/55) and `expert ID = 5` for the [82% checkpoint](https://huggingface.co/rezashkv/diffusion_pruning/tree/main/82).
 
 ### 2. Effect of Distillation
 To reproduce the experiments on the effect of distillation, you can use the following slurm scripts:
