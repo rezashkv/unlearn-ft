@@ -47,7 +47,7 @@ CMD=" \
   --cache_dir \
   /path/to/huggingface/ \
   --wandb_run_name \
-  aptp_coco_55_distillation_sd \
+  aptp_coco_55_distillation_random_sd \
   --pruning_ckpt_dir \
   path/to/unlearn-ft/ckpts/55/ \       ### or 82 with expert id = 5 ###
   --expert_id \
