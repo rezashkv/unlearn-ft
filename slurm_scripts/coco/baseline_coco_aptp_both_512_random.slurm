@@ -43,13 +43,13 @@ cd path/to/unlearn-ft/scripts/aptp || exit
 CMD=" \
   finetune.py \
   --base_config_path \
-  path/to/diffusion_pruning/configs/baselines/sd-2-1_coco_aptp_both_512_random.yaml \
+  path/to/unlearn-ft/configs/baselines/sd-2-1_coco_aptp_both_512_random.yaml \
   --cache_dir \
   /path/to/huggingface/ \
   --wandb_run_name \
   aptp_coco_55_both_sd_random \
   --pruning_ckpt_dir \
-  path/to/logs/unlearn-ft/ckpts/55/ \       ### or 82 with expert id = 5 ###
+  path/to/unlearn-ft/ckpts/55/ \       ### or 82 with expert id = 5 ###
   --expert_id \
   2 \
 "
