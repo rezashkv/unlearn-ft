@@ -20,4 +20,4 @@ cd path/to/unlearn-ft/scripts/metrics || exit
 gen_dir=$1
 result_dir="path/to/results"
 
-srun bash -c "python3 fid.py --gen_dir $gen_dir --dataset coco-val2017 --mode legacy_pytorch --result_dir $result_dir" 2>&1
+srun bash -c "python3 fid.py --gen_dir $gen_dir --dataset coco-val-2017 --mode legacy_pytorch --result_dir $result_dir" 2>&1
