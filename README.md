@@ -159,7 +159,7 @@ Now we can calculate the FID score for the generate images using [the provided s
 To calculate clip score, we use [this library](https://github.com/Taited/clip-score). Extract features of reference images with the [clip feature extraction script](scripts/metrics/clip_features.py) and calculate the score using the [clip score script](scripts/metrics/clip_score.py).
 
 ### 3. Unlearning Benchmarks
-To evaluate the models on unlearing benchmarks, follow their instructions and use the checkpoints or generated images from the experiments here. See [CSD](https://github.com/learn2phoenix/CSD#), [Artis Erasure (CP)](baselines/concept_prune/eval_artish.sh), [NSFW removal Eval](eval_nudity.sh)
+To evaluate the models on unlearing benchmarks, follow their instructions and use the checkpoints or generated images from the experiments here. See [CSD](https://github.com/learn2phoenix/CSD#), [Artist Erasure Eval (CP)](baselines/concept_prune/eval_artish.sh), [NSFW removal Eval](eval_nudity.sh)
 
 
 ## License
