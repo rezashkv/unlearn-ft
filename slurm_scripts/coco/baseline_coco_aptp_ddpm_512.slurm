@@ -38,18 +38,18 @@ export NCCL_DEBUG=INFO
 
 source ~/.bashrc
 conda activate unlearn-ft
-cd path/to/diffusion_pruning/scripts/aptp || exit
+cd path/to/unlearn-ft/scripts/aptp || exit
 
 CMD=" \
   finetune.py \
   --base_config_path \
-  path/to/diffusion_pruning/configs/styles/baselines/sd-2-1_coco_aptp_ddpm_512.yaml \
+  path/to/unlearn-ft/configs/baselines/sd-2-1_coco_aptp_ddpm_512.yaml \
   --cache_dir \
   /path/to/huggingface/ \
   --wandb_run_name \
   aptp_coco_55_ddpm_sd \
   --pruning_ckpt_dir \
-  path/to/logs/diffusion_pruning/pruning/sd-2-1_cc3m_base/cc3m-prune-0.6/checkpoint-1954/ \
+  path/to/logs/unlearn-ft/ckpts/55/ \       ### or 82 with expert id = 5 ###
   --expert_id \
   2 \
 "
