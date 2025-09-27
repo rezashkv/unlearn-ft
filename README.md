@@ -123,7 +123,7 @@ These scripts produce the results for 55. You can modify them to reproduce the r
 
 ### 3. Bilevel Finetuning
 To reproduce the bilevel finetuning experiments, you can use the following slurm scripts:
-- `slurm_scripts/coco/baseline_coco_aptp_both_512_bilevel.slurm` (For Monet. For other artists simply change the config file to your desired concepts).
+- `slurm_scripts/coco/baseline_coco_aptp_both_512_bilevel.slurm` (For Monet. You can simply change the config file for other desired concepts).
 - `slurm_scripts/coco/baseline_coco_aptp_both_512_bilevel_nudity.slurm`
 
 
