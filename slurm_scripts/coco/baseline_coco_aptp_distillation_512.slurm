@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=aptp_coco_82_distillation_sd
+#SBATCH --job-name=aptp_coco_55_distillation_sd
 #SBATCH --output=./logs/out-%x-%j.log
 #SBATCH --error=./logs/err-%x-%j.log
 #SBATCH --nodes=1
@@ -38,20 +38,20 @@ export NCCL_DEBUG=INFO
 
 source ~/.bashrc
 conda activate unlearn-ft
-cd path/to/diffusion_pruning/scripts/aptp || exit
+cd path/to/unlearn-ft/scripts/aptp || exit
 
 CMD=" \
   finetune.py \
   --base_config_path \
-  path/to/diffusion_pruning/configs/styles/baselines/sd-2-1_coco_aptp_distillation_512.yaml \
+  path/to/diffusion_pruning/configs/baselines/sd-2-1_coco_aptp_distillation_512.yaml \
   --cache_dir \
   /path/to/huggingface/ \
   --wandb_run_name \
   aptp_coco_82_distillation_sd \
   --pruning_ckpt_dir \
-  path/to/logs/diffusion_pruning/pruning/sd-2-1_coco_base/ablation-coco-target70-codes8/checkpoint-1618 \
+  path/to/logs/unlearn-ft/ckpts/55/ \       ### or 82 with expert id = 5 ###
   --expert_id \
-  5 \
+  2 \
 "
 LAUNCHER="accelerate launch \
     --multi_gpu \
