@@ -12,11 +12,11 @@
 
 source ~/.bashrc
 conda activate unlearn-ft
-cd path/to/diffusion_pruning/scripts/metrics || exit
+cd path/to/unlearn-ft/scripts/metrics || exit
 
 fid_images_dir=$1
 coco_features_dir="path/to//coco/annotations/clip-captions/ViT-B-32_clip_features/"
-result_dir="path/to/results/distillation/"
+result_dir="path/to/results/"
 
 
 python3 clip_score.py --gen_images_dir $fid_images_dir --text_features_dir $coco_features_dir --dataset_name coco-2017 --result_dir $result_dir 2>&1
