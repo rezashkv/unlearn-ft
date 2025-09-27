@@ -20,7 +20,7 @@ for target in "${targets[@]}"
 do
     python wanda.py \
     --base_config_path \
-    path/to/configs/styles/img/sd-2-1_coco.yaml \
+    path/to/unlearn-ft/configs/img/sd-2-1_coco.yaml \
     --ckpt_path \
     path/to/sd-2-1_coco_aptp_both_512/aptp_coco_82_both_sd/checkpoint-20000/ \
     --target \
@@ -28,15 +28,15 @@ do
 
     python remove_neurons.py \
      --base_config_path \
-    path/to/projects/diffusion_pruning/configs/styles/img/sd-2-1_coco.yaml \
+    path/to/unlearn-ft/configs/img/sd-2-1_coco.yaml \
     --ckpt_path \
-    path/to/scripts/baselines/sd-2-1_coco_aptp_both_512/aptp_coco_82_both_sd/checkpoint-20000/ \
+    path/to/ckpts/sd-2-1_coco_aptp_both_512/aptp_coco_82_both_sd/checkpoint-20000/ \
     --target \
     "$target"
 
     python save_union_over_time.py \
      --base_config_path \
-    path/to//projects/diffusion_pruning/configs/styles/img/sd-2-1_coco.yaml \
+    path/to/unlearn-ft/configs/styles/img/sd-2-1_coco.yaml \
     --ckpt_path \
     path/to/sd-2-1_coco_aptp_both_512/aptp_coco_82_both_sd/checkpoint-20000/ \
     --target \
