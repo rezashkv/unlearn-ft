@@ -43,7 +43,7 @@ cd path/to/unlearn-ft/scripts/aptp || exit
 CMD=" \
   finetune.py \
   --base_config_path \
-  path/to/diffusion_pruning/configs/baselines/sd-2-1_coco_aptp_distillation_512_random.yaml \
+  path/to/unlearn-ft/configs/baselines/sd-2-1_coco_aptp_distillation_512_random.yaml \
   --cache_dir \
   /path/to/huggingface/ \
   --wandb_run_name \
