@@ -38,7 +38,6 @@ achieving better performance for both fine-tuning and unlearning.
 5. [Evaluation](#evaluation)
    - [FID Score](#1-fid-score)
    - [CLIP Score](#2-clip-score)
-6. [Baselines](#baselines)
 7. [License](#license)
 8. [Citation](#citation)
 
