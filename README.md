@@ -126,9 +126,6 @@ To reproduce the bilevel finetuning experiments, you can use the following slurm
 - `slurm_scripts/coco/baseline_coco_aptp_both_512_bilevel.slurm` (For Monet. You can simply change the config file for other desired concepts).
 - `slurm_scripts/coco/baseline_coco_aptp_both_512_bilevel_nudity.slurm`
 
-
-Config files for all pruning ratios can be found in  [the configs directory](configs).
-
 ### 4. Baselines
 
 The code for reproducing the baseline results is provided in the [baselines folder](baselines). See the run.sh file in each baseline folder.
