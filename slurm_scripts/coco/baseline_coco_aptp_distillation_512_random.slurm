@@ -49,7 +49,7 @@ CMD=" \
   --wandb_run_name \
   aptp_coco_55_distillation_sd \
   --pruning_ckpt_dir \
-  path/to/logs/unlearn-ft/ckpts/55/ \       ### or 82 with expert id = 5 ###
+  path/to/unlearn-ft/ckpts/55/ \       ### or 82 with expert id = 5 ###
   --expert_id \
   2 \
 "
