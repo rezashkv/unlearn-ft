@@ -17,7 +17,7 @@ conda activate unlearn-ft
 
 cd path/to//projects/concept_prune || exit
 
-methods=("esd")
+methods=("esd" "uce" "pdm" "concept_prune" "pruned_baseline" "baseline")
 method=${methods[$SLURM_ARRAY_TASK_ID]}
 eval_dataset="i2p"
 
