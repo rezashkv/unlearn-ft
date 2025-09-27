@@ -38,7 +38,7 @@ export NCCL_DEBUG=INFO
 
 source ~/.bashrc
 conda activate unlearn-ft
-cd path/to/unlearn-ft/scripts/aptp || exit
+cd path/unlearn-ft/scripts/aptp || exit
 
 CMD=" \
   finetune.py \
