@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=baseline_coco_aptp_fid
+#SBATCH --job-name=fid
 #SBATCH --output=./logs/out-%x-%j.log
 #SBATCH --error=./logs/err-%x-%j.log
 #SBATCH --nodes=1
