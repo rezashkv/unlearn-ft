@@ -38,18 +38,19 @@ export NCCL_DEBUG=INFO
 
 source ~/.bashrc
 conda activate unlearn-ft
-cd path/to/diffusion_pruning/scripts/aptp || exit
+cd path/to/unlearn-ft/scripts/aptp || exit
 
 CMD=" \
   bilevel_finetune_nudity.py \
   --base_config_path \
-  path/to/diffusion_pruning/configs/styles/baselines/sd-2-1_coco_aptp_both_512_bilevel_nudity.yaml \
+  path/to/unlearn-ft/configs/baselines/sd-2-1_coco_aptp_both_512_bilevel_nudity.yaml \
   --cache_dir \
   /path/to/huggingface/ \
   --wandb_run_name \
   aptp_coco_82_both_sd_bilevel_512_nudity \
   --pruning_ckpt_dir \
-  path/to/logs/diffusion_pruning/pruning/sd-2-1_coco_base/ablation-coco-target70-codes8/checkpoint-1618 \
+  --pruning_ckpt_dir \
+  path/to/unlearn-ft/ckpts/82/ \  
   --expert_id \
   5 \
 "
