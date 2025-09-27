@@ -43,7 +43,6 @@ cd path/to/diffusion_pruning/scripts/metrics || exit
 
 finetuning_ckpt_dir=$1
 
-#checkpoints=(2000 4000 6000 8000 10000)
 #checkpoints=(20000)
 #ckpt=${checkpoints[$SLURM_ARRAY_TASK_ID]}
 
@@ -52,7 +51,7 @@ echo "START TIME: $(date)"
 CMD=" \
   generate_fid_images_txt.py \
   --base_config_path \
-  path/to/diffusion_pruning/configs/img_generation/sd-2-1_parti-prompt.yaml \
+  path/to/unlearn-ft/configs/img/sd-2-1_coco.yaml \
   --cache_dir \
   /path/to/huggingface/ \
   --finetuning_ckpt_dir \
