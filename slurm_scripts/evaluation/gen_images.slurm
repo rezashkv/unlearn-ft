@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=baseline_aptp_coco_50
+#SBATCH --job-name=gen-images
 #SBATCH --output=./logs/out-%x-%j.log
 #SBATCH --error=./logs/err-%x-%j.log
 #SBATCH --nodes=1
@@ -9,7 +9,6 @@
 #SBATCH --time=72:00:00
 #SBATCH --qos=high
 #SBATCH --mem=128G
-#SBATCH --array=0
 
 set -x -e
 # log the sbatch environment
@@ -39,12 +38,9 @@ export NCCL_DEBUG=INFO
 
 source ~/.bashrc
 conda activate unlearn-ft
-cd path/to/diffusion_pruning/scripts/metrics || exit
+cd path/to/unlearn-ft/scripts/metrics || exit
 
 finetuning_ckpt_dir=$1
-
-#checkpoints=(20000)
-#ckpt=${checkpoints[$SLURM_ARRAY_TASK_ID]}
 
 
 echo "START TIME: $(date)"
