@@ -159,6 +159,8 @@ Now we can calculate the FID score for the generate images using [the provided s
 ### 2. CLIP Score
 To calculate clip score, we use [this library](https://github.com/Taited/clip-score). Extract features of reference images with the [clip feature extraction script](scripts/metrics/clip_features.py) and calculate the score using the [clip score script](scripts/metrics/clip_score.py).
 
+### 2. Unleanring Benchmarks
+To evaluate the models on unlearing benchmarks, follow their instructions and use the checkpoints or generated images from the experiments here.
 
 ## Baselines
 The scripts to run the baselines are in [this directory](baselines).
