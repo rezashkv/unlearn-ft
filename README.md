@@ -134,7 +134,6 @@ The code for reproducing the baseline results is provided in the [baselines fold
 
 To generate images from any finetuned checkpoint, use the slurm scripts:
 - `slurm_scripts/evaluation/gen_images.slurm path/to/ft/ckpt`
-- `slurm_scripts/evaluation/gen_images_erasue_baselines.slurm`
 
 
 ## Evaluation
