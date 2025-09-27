@@ -15,7 +15,7 @@
 source ~/.bashrc
 conda activate unlearn-ft
 
-cd path/to//research/projects/concept_prune || exit
+cd path/to/concept_prune || exit
 
 method="uce"
 concepts=("Van Gogh" "Monet" "Pablo Picasso")
@@ -27,6 +27,6 @@ srun python artist_erasure.py \
 --baseline \
 $method \
 --base_config_path \
-path/to/configs/styles/img/sd-2-1_coco.yaml \
+path/to/unlearn-ft.configs/img/sd-2-1_coco.yaml \
 --model_id \
 "stabilityai/stable-diffusion-2-1"
