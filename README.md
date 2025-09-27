@@ -120,9 +120,10 @@ To reproduce the experiments on the effect of distillation, you can use the foll
 - `slurm_scripts/coco/baseline_coco_aptp_both_512.slurm`
 
 These scripts produce the results for 55. You can modify them to reproduce the results for 82 as well. Just change the config and ckpt paths.
+
 ### 3. Bilevel Finetuning
 To reproduce the bilevel finetuning experiments, you can use the following slurm scripts:
-- `slurm_scripts/coco/baseline_coco_aptp_both_512_bilevel.slurm`
+- `slurm_scripts/coco/baseline_coco_aptp_both_512_bilevel.slurm` (For Monet. For other artists simply change the config file to your desired concepts).
 - `slurm_scripts/coco/baseline_coco_aptp_both_512_bilevel_nudity.slurm`
 
 
