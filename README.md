@@ -162,9 +162,6 @@ To calculate clip score, we use [this library](https://github.com/Taited/clip-sc
 ### 3. Unlearning Benchmarks
 To evaluate the models on unlearing benchmarks, follow their instructions and use the checkpoints or generated images from the experiments here. See [CSD](https://github.com/learn2phoenix/CSD#), [Artis Erasure (CP)](baselines/concept_prune/eval_artish.sh), [NSFW removal Eval](eval_nudity.sh)
 
-## Baselines
-The scripts to run the baselines are in [this directory](baselines).
-
 
 ## License
 
