@@ -17,7 +17,7 @@ conda activate unlearn-ft
 
 cd path/to/concept_prune || exit
 
-method="uce"
+method="uce" # or concept-prune, pdm (for unlearn-ft), pruned-baseline (simple ft with no unlearning), baseline (sd-2.1)
 concepts=("Van Gogh" "Monet" "Pablo Picasso")
 concept=${concepts[$SLURM_ARRAY_TASK_ID]}
 
