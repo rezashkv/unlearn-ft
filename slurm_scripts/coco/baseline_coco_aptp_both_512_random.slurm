@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=aptp_coco_55_both_sd_random
+#SBATCH --job-name=aptp_coco_55_both_random_sd
 #SBATCH --output=./logs/out-%x-%j.log
 #SBATCH --error=./logs/err-%x-%j.log
 #SBATCH --nodes=1
@@ -47,7 +47,7 @@ CMD=" \
   --cache_dir \
   /path/to/huggingface/ \
   --wandb_run_name \
-  aptp_coco_55_both_sd_random \
+  aptp_coco_55_both_random_sd\
   --pruning_ckpt_dir \
   path/to/unlearn-ft/ckpts/55/ \       ### or 82 with expert id = 5 ###
   --expert_id \
