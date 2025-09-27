@@ -110,6 +110,7 @@ There are pruning checkpoints (55 and 82) corresponding to the paper experiments
 
 - `slurm_scripts/coco/baseline_coco_aptp_ddpm_512.slurm`
 - `slurm_scripts/coco/baseline_coco_aptp_ddpm_512_random.slurm`
+
 and similarly for other loss variants (distillation, both) if you're interested.
 
 ### 2. Effect of Distillation
