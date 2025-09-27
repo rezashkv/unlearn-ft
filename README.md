@@ -106,7 +106,7 @@ coco
 ## Training
 
 ### 1. Effect of Pruning
-There are pruning checkpoints (55 and 82) corresponding to the paper experiments in [this HF Repo](https://huggingface.co/rezashkv/diffusion_pruning). You can download them and put them in a path of your choice. Then, to reproduce the experiments on the effect of pruning, you can use the following slurm scripts. In all scripts, set `expert ID = 2` for the [55% checkpoint](https://huggingface.co/rezashkv/diffusion_pruning/tree/main/55) and `expert ID = 5` for the [82% checkpoint](https://huggingface.co/rezashkv/diffusion_pruning/tree/main/82) if expert id is required.
+There are pruning checkpoints (55 and 82) corresponding to the paper experiments in [this HF Repo](https://huggingface.co/rezashkv/diffusion_pruning). You can download them and put them in a path of your choice. Then, to reproduce the experiments on the effect of pruning, you can use the following slurm scripts. Make sure you update the checkpoint paths in the scripts. In all scripts, set `expert ID = 2` for the [55% checkpoint](https://huggingface.co/rezashkv/diffusion_pruning/tree/main/55) and `expert ID = 5` for the [82% checkpoint](https://huggingface.co/rezashkv/diffusion_pruning/tree/main/82) if expert id is required. 
 
 - `slurm_scripts/coco/baseline_coco_aptp_ddpm_512.slurm`
 - `slurm_scripts/coco/baseline_coco_aptp_ddpm_512_random.slurm`
