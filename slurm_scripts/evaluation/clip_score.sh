@@ -19,4 +19,4 @@ coco_features_dir="path/to//coco/annotations/clip-captions/ViT-B-32_clip_feature
 result_dir="path/to/results/"
 
 
-python3 clip_score.py --gen_images_dir $fid_images_dir --text_features_dir $coco_features_dir --dataset_name coco-2017 --result_dir $result_dir 2>&1
+python3 clip_score.py --gen_images_dir $fid_images_dir --text_features_dir $coco_features_dir --dataset_name coco-val-2017 --result_dir $result_dir 2>&1
