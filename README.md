@@ -161,7 +161,7 @@ To calculate clip score, we use [this library](https://github.com/Taited/clip-sc
 
 
 ## Baselines
-The scripts to run the baselines are in [this directory](scripts/baselines).
+The scripts to run the baselines are in [this directory](baselines).
 
 
 ## License
