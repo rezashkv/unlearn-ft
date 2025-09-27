@@ -29,7 +29,7 @@ srun python nudity_eval.py \
 --baseline \
 "$method" \
 --base_config_path \
-path/to/configs/styles/img/sd-2-1_coco.yaml \
+path/to/unlearn-ft/configs/img/sd-2-1_coco.yaml \
 --model_id \
 "stabilityai/stable-diffusion-2-1" \
 
